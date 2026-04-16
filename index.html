@@ -1,11 +1,137 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+    <meta charset="UTF-8">
     <title>Мой сайт</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background: #334155;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        footer {
+            background: #020617;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Привет!</h1>
+
+<header>
+    Мой сайт
+</header>
+
+<nav>
+    <a href="#">Главная</a>
+    <a href="#about">Обо мне</a>
+    <a href="#projects">Проекты</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<section class="hero">
+    <h1>Привет 👋</h1>
     <p>Это мой сайт на GitHub Pages</p>
+    <a href="#about" class="btn">Узнать больше</a>
+</section>
+
+<section id="about" class="section">
+    <h2>Обо мне</h2>
+    <p>Напиши здесь информацию о себе или о проекте.</p>
+</section>
+
+<section id="projects" class="section">
+    <h2>Мои проекты</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Проект 1</h3>
+            <p>Описание проекта</p>
+        </div>
+        <div class="card">
+            <h3>Проект 2</h3>
+            <p>Описание проекта</p>
+        </div>
+        <div class="card">
+            <h3>Проект 3</h3>
+            <p>Описание проекта</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Контакты</h2>
+    <p>Email: example@mail.com</p>
+</section>
+
+<footer>
+    © 2026 Мой сайт
+</footer>
+
 </body>
 </html>
